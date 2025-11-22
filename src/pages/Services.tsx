@@ -32,8 +32,8 @@ const Services = () => {
                                 key={category}
                                 onClick={() => setActiveCategory(category)}
                                 className={`px-6 py-2 rounded-full font-medium transition-all duration-300 text-sm ${activeCategory === category
-                                        ? 'bg-gradient-to-r from-gold-500 to-gold-400 text-deep-black'
-                                        : 'glass-card text-gray-300 hover:text-gold-400 hover:border-gold-400/50'
+                                    ? 'bg-gradient-to-r from-gold-500 to-gold-400 text-deep-black'
+                                    : 'glass-card text-gray-300 hover:text-gold-400 hover:border-gold-400/50'
                                     }`}
                             >
                                 {category}
@@ -47,7 +47,7 @@ const Services = () => {
             <section className="py-16">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="space-y-8">
-                        {filteredServices.map((service, index) => (
+                        {filteredServices.map((service) => (
                             <div
                                 key={service.id}
                                 id={service.slug}

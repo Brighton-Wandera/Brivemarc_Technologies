@@ -1,5 +1,5 @@
-import { useState, FormEvent } from 'react';
-import emailjs from '@emailjs/browser';
+import { useState, type FormEvent } from 'react';
+// import emailjs from '@emailjs/browser';
 import type { ContactFormData } from '../types';
 
 const Contact = () => {
@@ -16,9 +16,9 @@ const Contact = () => {
 
     // Note: User needs to configure EmailJS with their own credentials
     // Visit https://www.emailjs.com/ to set up
-    const EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID'; // Replace with actual ID
-    const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID'; // Replace with actual ID
-    const EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY'; // Replace with actual key
+    // const EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID'; // Replace with actual ID
+    // const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID'; // Replace with actual ID
+    // const EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY'; // Replace with actual key
 
     const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
